@@ -5,6 +5,6 @@ module.exports = (app) => {
 };
 
 function NavController($log) {
-  $log.log('Entering NavController...');
-  
+  $log.debug('Entering NavController...');
+
 }
