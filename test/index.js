@@ -1,3 +1,3 @@
 'use strict';
 
-require('./nav-test');
+require('./initial');
