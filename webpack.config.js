@@ -5,13 +5,11 @@ const ExtractText = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 const production = process.env.NODE_ENV === 'production';
-const API_URL = JSON.stringify(process.env.API_URL || 'http://localhost:3000');
 
 
 let pluginsArray = [
   new ExtractText('bundle.css'),
   new webpack.DefinePlugin({
-    __API_URL__: API_URL,
     __DEBUG__: JSON.stringify(!production),
   }),
 ];

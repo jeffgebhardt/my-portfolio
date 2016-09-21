@@ -10,7 +10,7 @@ let gebApp = angular.module('gebApp', [require('angular-route')]);
 require('./components')(gebApp);
 
 gebApp.config(['$logProvider', function($logProvider){
-  $logProvider.debugEnabled(__DEBUG__);
+  $logProvider.debugEnabled(__DEBUG__); // eslint-disable-line
 }]);
 
 gebApp.config(['$routeProvider', function($route) {
